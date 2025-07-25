@@ -628,6 +628,8 @@ def test_wheel(state: BuildState, wheel: Path) -> None:
         "maxVersion",
         "--site-packages",
         site_packages_dir,
+        "--verbose",
+        "3",
         "--cwd",
         cwd_dir,
         *test_args,
